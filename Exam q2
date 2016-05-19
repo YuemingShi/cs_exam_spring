@@ -11,4 +11,20 @@ public interface Greetings{
 -----------------------------------------------------
 
 a)  Explain what an interface is.
+
+interface like a screen which the methods inside it are undefined.And the methods will be defined in the classes that implements the interface.
+
 b)  Write a complete class for a language speaker of your choice, like ItalianSpeaker, which fully implements the interface.
+
+
+public class ChineseSpeaker implements Greetings{
+
+public String FormalHello(){
+  return("Ni Hao a");
+  }
+  
+  public String CasualHello(){
+  return("Lei Hou");
+  }
+  
+  }
