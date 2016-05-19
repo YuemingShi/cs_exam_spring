@@ -66,14 +66,19 @@ A Queue is a container that could add, remove and peel. It is FIFO(first in firs
 d)  Complete the Queue class by writing the "peek" and "remove" methods.
 
 public Link peek(){
-    return this.head;}
-    
-   
-    public Link remove(){
-    for(int i=0; i<length; i++){
-    Link output = head;
-    this.head=this.head.next;
+    Link output=head;
+    if(head.next=null){return output;}
+    else{
+      for(int i=0; i<length; i++){
+        output=output.next;
+      }
     }
-    length=length-1;
-    return output;}
+    return output;
+    }
+    
+  public Link remove(){
+    Link output = peek();
+    length = length-1;
+    return output;
+   }
 
